@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title> </title>
+    </head>
+    <body>
+        <main>
+            <h1>  Exercici coordenades </h1>
+            
+        </main>
+
+        <script>
+
+            class  Punts {
+               
+                constructor(x,y){
+                    this.x = x;
+                    this.y = y;
+                }
+                
+                getx(){
+                    return this.x;
+                }
+                gety(){
+                    return this.y;
+                }
+                cambiar(nX,nY){
+                    this.x = nX;
+                    this.y = nY;
+                }
+                copia(){
+                    return Object.assign(this.x, this.y);
+
+                }
+                suma (Punts){
+                    let x = this.x + Punts.getx();
+                    let y = this.y + Punts.gety();
+
+                    return new Punts(x, y);
+
+                }
+            }
+        
+            
+        </script>
+    </body>
+</html>
